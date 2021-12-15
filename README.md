@@ -2,7 +2,7 @@ credit: [Abdulaziz Alshehri](https://github.com/AbdulazizAlshehri) & [Ibrahim Al
 
 # ML-NLP-Arabic-Newspaper-Topic-Modeling
 ![icon](imgs/icon.JPG?raw=true "icon")
-The idea of this project is to apply topic modeling on Arabic newspaper articles, that can be used to build a predictive model to be applied on different sources of data such as social media, users comments. The advantage of using newspaper articles is that it has a good coverage of general topics: politics, local news, sport, economy, etc. Morover, it gurantees a good distribution of topics. <br>
+<br>The idea of this project is to apply topic modeling on Arabic newspaper articles, that can be used to build a predictive model to be applied on different sources of data such as social media, users comments. The advantage of using newspaper articles is that it has a good coverage of general topics: politics, local news, sport, economy, etc. Morover, it gurantees a good distribution of topics. <br>
 
 In this project we applied Latent Dirichlet Allocation method to group documents per topic.Furthermore, a comparison between word stemming, and different word vectorizer was done.
 
