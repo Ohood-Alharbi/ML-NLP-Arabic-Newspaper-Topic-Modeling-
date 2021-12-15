@@ -44,23 +44,24 @@ Arabic NLTK stop words list was limited, and does not include variations such as
 we iteratively added more stop words, to exclude it from topics.
 ![ch2](imgs/ch2.JPG?raw=true "ch2")
 ### 3) Memory issues:
-LDA and preprocessing takes up a lot of Ram memory. Although LDA algorithm can be configured to optimize memory, we found that using higher spec PC, or apach spark would be a better option to quickly experiment different configurations.
-![Ram](imgs/Ram.png?raw=true "Ram")
+LDA and preprocessing takes up a lot of Ram memory. Although LDA algorithm can be configured to optimize memory, we found that using higher spec PC, or apach spark would be a better option to quickly experiment different configurations.<br>
+![Ram](imgs/Ram.png?raw=true "Ram")<br>
 
 
 ## Number of Topics:
-Coherence measure was used to identify the best number of topics. It measures the degree of semantic similarity between topics. As shown in graph below 40 topics had the highest coherence.
+Coherence measure was used to identify the best number of topics. It measures the degree of semantic similarity between topics. As shown in graph below 40 topics had the highest coherence.<br>
 ![Coherence_Topic](imgs/Coherence_Topic.JPG?raw=true "Ram")
 
 
 ## Comparing Steming and without stemming:
 Unlike other languages, Stemming in Arabic does not follow specific process, hence it does not produce a good result. 
-<br> below is a sample of resulted topics with stemming. 
-![Stemming](imgs/Stemming.JPG?raw=true "Stemming")
+<br> below is a sample of resulted topics with stemming. <br>
+![Stemming](imgs/stemming.JPG?raw=true "Stemming")<br>
 Although it had a higher coherence value of 0.58 than without stemming version 0.46, The results are difficult to interpret and can mean different things. such as "نسب" which could be derived from  "نسبه" or "النسب"
 
 ## Results:
 ![results](imgs/results.JPG?raw=true "results")
+<br>
 from selected topics, we could easily tell the meaning of the topic. However, some of LDA topics are of the same general topic. Further words examining can tell us more if they are the same topic, or a sub category of topic.<br>
 for example topics 3, and 26 are both talking about energy. Nevertheless, the first is more related to Energy - Geopolitical, while the other is more to Energy- Economic (pricing,Markets).
 
