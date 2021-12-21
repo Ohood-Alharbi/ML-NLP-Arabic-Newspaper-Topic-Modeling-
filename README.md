@@ -1,6 +1,13 @@
 
 # ML-NLP-Arabic-Newspaper-Topic-Modeling
 
+
+# Table of Content
+- [Code - with Stemming](https://github.com/ibalzuhairi/ML-NLP-Arabic-Newspaper-Topic-Modeling-/blob/main/LDA-Final-Stemming.ipynb)
+- [Code - without Stemming](https://github.com/ibalzuhairi/ML-NLP-Arabic-Newspaper-Topic-Modeling-/blob/main/LDA-Final-NoStemming.ipynb)
+- [Data Sample](https://github.com/ibalzuhairi/ML-NLP-Arabic-Newspaper-Topic-Modeling-/blob/main/texts.csv)
+- [Presentation](https://github.com/ibalzuhairi/ML-NLP-Arabic-Newspaper-Topic-Modeling-/blob/main/Presentation/NLP%20Presentation.pdf)
+
 # About
 The idea of this project is to apply topic modeling on Arabic newspaper articles, that can be used to build a predictive model to be applied on different sources of data such as social media, users comments. The advantage of using newspaper articles is that it has a good coverage of general topics: politics, local news, sport, economy, etc. Morover, it gurantees a good distribution of topics. <br>
 
