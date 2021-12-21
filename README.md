@@ -1,20 +1,22 @@
-credit: [Abdulaziz Alshehri](https://github.com/AbdulazizAlshehri) & [Ibrahim Alzuhairi](https://github.com/ibalzuhairi)
 
 # ML-NLP-Arabic-Newspaper-Topic-Modeling
-![icon](imgs/icon.JPG?raw=true "icon")
-<br>The idea of this project is to apply topic modeling on Arabic newspaper articles, that can be used to build a predictive model to be applied on different sources of data such as social media, users comments. The advantage of using newspaper articles is that it has a good coverage of general topics: politics, local news, sport, economy, etc. Morover, it gurantees a good distribution of topics. <br>
+
+# About
+The idea of this project is to apply topic modeling on Arabic newspaper articles, that can be used to build a predictive model to be applied on different sources of data such as social media, users comments. The advantage of using newspaper articles is that it has a good coverage of general topics: politics, local news, sport, economy, etc. Morover, it gurantees a good distribution of topics. <br>
 
 In this project we applied Latent Dirichlet Allocation method to group documents per topic.Furthermore, a comparison between word stemming, and different word vectorizer was done.
 
+![icon](imgs/icon.JPG?raw=true "icon")
 
-## Dataset:
+
+# Dataset:
 Over 300k articles (1.3 GB) scrapped from Alriyadh.com, a famous local newspaper in Saudi Arabia. The articles were scrapped along with thier meta data such as: Title, Genre, Sub category, Author, Publish date,, etc.
 
 
-## Pipeline:
+# Pipeline:
 ![pipeline](imgs/pipeline.JPG?raw=true "Pipeline")
 
-## Cleaning:
+# Cleaning:
 
 ### 1) Removing short and long articles:
 It was observed that some of the records contains a short comment, or tweet like articles. while other contains a very long list of names such as people enlisted in goverment employment. <br>
@@ -35,7 +37,7 @@ Formal arabic contains different characters that give it more specific pronounci
 <br> some of these letters variations were captured and replaced with one prominent letter. 
 ![reduce-var](imgs/reduce-var.JPG?raw=true "reduce-var")
 
-## Challenges:
+# Challenges:
 ### 1) Arabic encoding problem:
 during modelling we realized that there are different encoding for the same letter, specially hamza "ء"  and "أ". where the first was considered a puntuation and was replaced by a space during tokenization.
 ![ch1](imgs/ch1.JPG?raw=true "ch1")
@@ -48,24 +50,26 @@ LDA and preprocessing takes up a lot of Ram memory. Although LDA algorithm can b
 ![Ram](imgs/Ram.png?raw=true "Ram")<br>
 
 
-## Number of Topics:
+# Number of Topics:
 Coherence measure was used to identify the best number of topics. It measures the degree of semantic similarity between topics. As shown in graph below 40 topics had the highest coherence.<br>
 ![Coherence_Topic](imgs/Coherence_Topic.JPG?raw=true "Ram")
 
 
-## Comparing Steming and without stemming:
+# Comparing Steming and without stemming:
 Unlike other languages, Stemming in Arabic does not follow specific process, hence it does not produce a good result. 
 <br> below is a sample of resulted topics with stemming. <br>
 ![Stemming](imgs/stemming.JPG?raw=true "Stemming")<br>
 Although it had a higher coherence value of 0.58 than without stemming version 0.46, The results are difficult to interpret and can mean different things. such as "نسب" which could be derived from  "نسبه" or "النسب"
 
-## Results:
+# Results:
 ![results](imgs/results.JPG?raw=true "results")
 <br>
 from selected topics, we could easily tell the meaning of the topic. However, some of LDA topics are of the same general topic. Further words examining can tell us more if they are the same topic, or a sub category of topic.<br>
 for example topics 3, and 26 are both talking about energy. Nevertheless, the first is more related to Energy - Geopolitical, while the other is more to Energy- Economic (pricing,Markets).
 
 
+</br>
+This project was done to fulfill SDAIA T5 Bootcamp requirements.
 
-
+*Contributors [Ibrahim Alzuhairi](https://github.com/ibalzuhairi) and [Abdulaziz Alshehri](https://github.com/AbdulazizAlshehri)*
 
